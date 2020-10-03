@@ -7,19 +7,47 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color:#CCFF66;
+    background-color:black;
 }
+input, button{  
+    outline: none;
+    background-color: transparent;
+}
+
 .nav{
-    background-color: white;
     opacity:0.5;
     position: absolute;
-    display:flex;
+    display:none;
     flex-direction: row;
     top:0;
     right: 10%;
     padding:20px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+}
+.menu{
+    margin-top: 10vw;
+    margin-right:10vw;
+    display: none;
+    position:absolute;
+    flex-direction: column;
+    right:0;
+}
+.smenu{
+    border: 0 solid;
+    background-color: transparent;
+    font-size: 5vw;
+    width:25vw;
+    height:20vh;
+    color:white;
+}
+#back{
+    color:white;
+}
+.bot{
+    font-size: 6rem;
+    border:0 solid;
+    background: none;
 }
 .right{
     border:0px solid;
@@ -31,40 +59,41 @@ body{
     transition: 1s;
 }
 .home{
+    transition: 1s;
     top:0;
-    position:absolute;
+    position:fixed;
     width:100%;
     height:100%;
     display:flex;
     flex-direction:column;
     justify-content: center;
-    /* align-items: center; */
-    /* background-image: url(castle-5511046_1280.jpg);
-    background-size: 1000px 700px; */
-    background-color:#CCFF66;
+    align-items: center;
+    background-color:#f7f7f7 ;
 }
 .about_me{
+    transition: 1s;
     display: none;
     top:0;
-    position:absolute;
+    position:fixed;
     width:100%;
     height:100%;
     margin:0;
     padding:0;
-    background-color:#CCFF66;
+    background-color:#f7f7f7 ;
 }
 .works{
+    transition: 1s;
     display: none;
     top:0;
     position:absolute;
     width:100%;
-    height:100%;
     margin:0;
     padding:0;
     position: absolute;
-    background-color:#CCFF66;
+    background-color:#f7f7f7 ;
 }
 .connect{
+    transition: 1s;
     display: none;
     top:0;
     justify-content: center;
@@ -75,33 +104,18 @@ body{
     height:100%;
     margin:0;
     padding:0;
-    background-color:#CCFF66;
+    background-color:#f7f7f7 ;
 }
-/* #homeimg{
-    padding:100px;
-    padding-left:0;
-    right:0;
-    width:50%;
-    height:100%;
-    position: absolute;
-    opacity: 1;
-} */
 .wrap, .about_me{
     padding:100px;
-    position: relative;
+    /* position: relative; */
     color:black;
     /* text-align:center; */
 }
-.fa-globe{
-    font-size:10rem;
-}
 .lg-text{
-    font-size:5rem;
+    font-size:5vw;
     font-weight:bold;
     margin-bottom:5px;
-}
-.sm-text{
-    font-size: 1.5rem;
 }
 
 #dyname{
@@ -117,6 +131,9 @@ body{
     width:4px;
     height:100%;
     background-color:black;
+}
+#introduce{
+    width:auto;
 }
 #dyname.active::after{
     display:none;
@@ -139,3 +156,8 @@ body{
 .project > div{
     margin:50px;
 }
+.connect{
+    font-size:5vw;
+    color:black;
+}
+
