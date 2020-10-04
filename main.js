@@ -79,9 +79,19 @@ function btntest(btn){
     }else if(btn == 5){
         home.style.opacity = "1";
         home.style.display = "flex";
+        home.style.transform = "perspective(0) scale(1) translate3d(0,0,0) rotate3d(0,0,0,0)"
+        nav.style.display = "none";
+        me.style.display = "none";
+        works.style.display = "none";
+        connect.style.display = "none";
+        menu.style.display = "none";
+    }else if(btn == 6){
+        home.style.opacity = "1";
+        home.style.display = "flex";
+        home.style.transform = "perspective(0) scale(1) translate3d(0,0,0) rotate3d(0,0,0,0)"
         home.style.transform = "perspective(1000px) scale(0) translate3d(0,42vh,0) rotate3d(1,0,0,72deg)";
         setTimeout(function(){ Evn(1); },300);
-        nav.style.display = "none";
+        nav.style.display = "flex";
         me.style.display = "none";
         works.style.display = "none";
         connect.style.display = "none";

@@ -9,34 +9,30 @@
     </head>
     <body>
         <div id="container" class="container">
-            <div id="home" class="home">
-                <!-- <img id="homeimg" src="castle-5511046_1280.jpg"> -->
-                <input value="MENU" type="button" onclick="btntest(1)" class="bot"/>
-                <div class="wrap">
-                    <!-- <h1>안녕하세요.</h1> -->
+            <div id="home" class="home"><div class="wrap">
                     <p id="dyname" class="lg-text"></p>
-                    <!-- <p id="dynamic" class="sm-text">
-                        개인 포트폴리오 사이트 입니다.
-                    </p> -->
                 </div>
+                <input value="MENU" type="button" onclick="btntest(1)" class="bot"/>
             </div>
             <div id="menu" class="menu">
                 <input value="About Me" onclick="btntest(2)" type="button" class="smenu">
                 <input value="Works" onclick="btntest(3)" type="button" class="smenu">
                 <input value="Connect" onclick="btntest(4)" type="button" class="smenu">
                 <button  onclick="btntest(5)" type="button" class="smenu" id="back">
-                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-times"></i>
                 </button>
             </div>
             <div id="about_me" class="about_me">
                 <div id="introduce" style=" border:1px solid black;">
-                    <img id="mypoto" src="castle-5511046_1280.jpg" style="width:150px; border:1px solid black;">
+                    <img id="mypoto" src="castle-5511046_1280.jpg" style="width:20vw; border:1px solid black;">
                     <div id="name">이름: 이호윤</div>
                     <div id="lesson">학과: 컴퓨터 정보 공학</div>
                     <div id="YMD">생년월일: 2000.03.09</div>
                 </div>
                 <div id="addintroduce">
-                    gxhxgcg
+                    <div id="life">
+                        나는
+                    </div>
                 </div>
             </div>
             <div id="works" class="works">
@@ -71,16 +67,16 @@
         </div>
         <nav id="nav" class="nav">
             <div>
-                <input onclick="btntest(5)" type="button" class="right" value="home"/>
+                <input onclick="btntest(6)" type="button" class="right" value="home"/>
             </div>
             <div>
-                <input onclick="btntest(2)" type="button" class="right" value="about_me"/>
+                <input onclick="btntest(2)" type="button" class="right" value="about"/>
             </div>
             <div>
-                <input value="works" onclick="btntest(3)" type="button" class="right"/>
+                <input onclick="btntest(3)" type="button" class="right" value="works"/>
             </div>
             <div>
-                <input value="connect" onclick="btntest(4)" type="button" class="right"/>
+                <input onclick="btntest(4)" type="button" class="right" value="connect"/>
             </div>
         </nav>
         <script src="main.js"></script>
