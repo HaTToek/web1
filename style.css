@@ -1,4 +1,12 @@
+@font-face { 
+    font-family: 'NEXON Lv1 Gothic OTF Bold'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal; 
+}
+
 *{
+    font-family: "NEXON Lv1 Gothic OTF Bold";
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -194,8 +202,29 @@ input, button{
     margin: 2vh 2vw;
     font-size: larger;
 }
-.connect{
-    font-size:5vw;
+#card{
+    border-radius: 5%;
+    background-image:url("bike-riding-5557589_1920.png");
+    background-size: 100%;
     color:black;
+    border:none;
+    position:relative;
+    transition:800ms ease all;
+    transform-style: preserve-3d;
 }
-
+#card:hover{
+    transform:rotateY(-180deg);
+    background-image:url("bike-riding-5557589_1920.png");
+}
+.card_front{
+    text-align: center;
+    margin:5vh 5vw;
+    font-size: x-large;
+    transform: translateZ(1px);
+}
+.card_back{
+    margin:5vh 5vw;
+    font-size: large;
+    color:#f7f7f7;
+    transform: rotateY(180deg) translateZ(1px);
+}
