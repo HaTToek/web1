@@ -75,7 +75,7 @@ function Evnin(evn, evnbtn){
         }else if(evn == 4){
             connect.style.display = "none";
         }
-        works.style.display = "block";
+        works.style.display = "flex";
         setTimeout(function(){Evnmid(evnbtn);},300);
     }else if (evnbtn == 4){
         home.style.display = "none";
@@ -118,7 +118,6 @@ function Evnout(evn, evnbtn){
 document.addEventListener('scroll', function() {
     currentScrollValue = document.documentElement.scrollTop;
     nav.style.top = currentScrollValue +'px' ;
-    console.log(currentScrollValue);
 });
 
 // 버튼
@@ -136,7 +135,7 @@ function btntest(btn){
             setTimeout(function(){ Evnout(1, btn); },300);
         }else if(me.style.display=="flex"){
             setTimeout(function(){ Evnout(2, btn); },300);
-        }else if(works.style.display=="block"){
+        }else if(works.style.display=="flex"){
             setTimeout(function(){ Evnout(3, btn); },300);
         }else if(connect.style.display=="flex"){
             setTimeout(function(){ Evnout(4, btn); },300);
@@ -149,7 +148,7 @@ function btntest(btn){
             setTimeout(function(){ Evnout(1, btn); },300);
         }else if(me.style.display=="flex"){
             setTimeout(function(){ Evnout(2, btn); },300);
-        }else if(works.style.display=="block"){
+        }else if(works.style.display=="flex"){
             setTimeout(function(){ Evnout(3, btn); },300);
         }else if(connect.style.display=="flex"){
             setTimeout(function(){ Evnout(4, btn); },300);
@@ -162,7 +161,7 @@ function btntest(btn){
             setTimeout(function(){ Evnout(1, btn); },300);
         }else if(me.style.display=="flex"){
             setTimeout(function(){ Evnout(2, btn); },300);
-        }else if(works.style.display=="block"){
+        }else if(works.style.display=="flex"){
             setTimeout(function(){ Evnout(3, btn); },300);
         }else if(connect.style.display=="flex"){
             setTimeout(function(){ Evnout(4, btn); },300);
@@ -179,7 +178,7 @@ function btntest(btn){
             setTimeout(function(){ Evnout(1, 1); },300);
         }else if(me.style.display=="flex"){
             setTimeout(function(){ Evnout(2, 1); },300);
-        }else if(works.style.display=="block"){
+        }else if(works.style.display=="flex"){
             setTimeout(function(){ Evnout(3, 1); },300);
         }else if(connect.style.display=="flex"){
             setTimeout(function(){ Evnout(4, 1); },300);

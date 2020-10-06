@@ -25,7 +25,6 @@ input, button{
 .nav > div > input{
     color:white;
 }
-
 .nav{
     opacity:0.5;
     position: absolute;
@@ -119,12 +118,13 @@ input, button{
 .works{
     transition: 1s;
     display: none;
+    flex-direction: column;
     top:0;
     position:absolute;
     width:100%;
+    height:100%;
     margin:0;
     padding:0;
-    position: absolute;
     background-color:#f7f7f7 ;
 }
 .connect{
@@ -142,10 +142,8 @@ input, button{
     background-color:#f7f7f7 ;
 }
 .wrap{
-    padding:100px;
-    /* position: relative; */
     color:black;
-    /* text-align:center; */
+    margin:7vh 0;
 }
 .lg-text{
     font-size:5vw;
@@ -187,20 +185,24 @@ input, button{
     font-size: medium;
 }
 .works{
-    padding:50px 150px;
+    justify-content: center;
+    padding:2vh 10vw;
 }
 .project{
+    margin:5vh 0;
     display:flex;
     flex-direction: row;
     width:100%;
-    height:70%;
     background-color: white;
-    margin:5rem 0;
-    margin-right:50px;
 }
 .pro{
     margin: 2vh 2vw;
+}
+.project_name{
     font-size: larger;
+}
+.project_contents{
+    font-size:small;
 }
 #card{
     border-radius: 5%;
