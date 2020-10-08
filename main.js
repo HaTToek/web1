@@ -7,6 +7,7 @@ var works = document.querySelector("#works");
 var connect = document.querySelector("#connect");
 var menu = document.querySelector("#menu");
 var nav = document.querySelector("#nav");
+var card = document.querySelector("#mycard");
 var currentScrollValue = 0;
 var befor = 0;
 var btn = 0;
@@ -14,6 +15,11 @@ var evn = 0;
 var auto = 1;
 var evnbtn = 0;
 var curren = 2;
+
+card.onclick = function(){
+    card.classList.toggle("flipped");
+};
+
 test();
 
 function test(){
